@@ -7,7 +7,7 @@ import { IoMdPin } from "react-icons/io";
 
 export function About() {
   return (
-    <section className="bg-[#FDF6EC] py-16">
+    <section className="bg-slate-100 py-16">
       <div className="container px-4 mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
@@ -33,7 +33,7 @@ export function About() {
             </div>
           </div>
 
-          <div className="space-y-6 mt-10 lg:mt-0">
+          <div data-aos="fade-left" className="space-y-6 mt-10 lg:mt-0">
             <h2 className="text-4xl font-bold">Sobre</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

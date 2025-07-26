@@ -19,7 +19,7 @@ export function Testimonials() {
   }
 
   return (
-    <section className="bg-[#FFD449] py-16">
+    <section className="bg-cyan-100 py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">
           Depoimentos dos nossos clientes
@@ -30,7 +30,7 @@ export function Testimonials() {
             <div className="flex">
               {testimonials.map((item, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-3">
-                  <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
+                  <article className="bg-indigo-500 text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
                     <div className="flex flex-col items-center text-center space-y-4">
                       <div className="relative w-24 h-24">
                         <Image
@@ -46,7 +46,7 @@ export function Testimonials() {
 
                       <div>
                         <p className="font-bold">{item.author}</p>
-                        <p className="text-sm text-gray-400">{item.role}</p>
+                        <p className="text-sm text-slate-100">{item.role}</p>
                       </div>
                     </div>
                   </article>

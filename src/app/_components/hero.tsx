@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="bg-[#E84C3D] text-white relative overflow-hidden">
+    <section className="bg-indigo-500 text-white relative overflow-hidden">
       <div>
         <Image
           src={dogImage}
@@ -21,15 +21,19 @@ export function Hero() {
       <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
         <article className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10">
+            <h1
+              data-aos="fade-down"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10"
+            >
               Seu pet merece cuidado, carinho e atenção.
             </h1>
-            <p className="lg:text-lg">
+            <p data-aos="fade-right" className="lg:text-lg">
               Oferecemos os melhores serviços para garantir o bem estar e a
               felicidade do seu amigo de quatro patas.
             </p>
             <div className="flex">
               <a
+                data-aos="fade-up"
                 target="_blank"
                 href={`https://wa.me/559999999999?text=${encodeURIComponent(
                   "Olá, vi no site sobre serviços de petshop e gostaria de mais informações."
@@ -41,7 +45,7 @@ export function Hero() {
               </a>
             </div>
             <div className="mt-8">
-              <p className="text-sm mb-4">
+              <p data-aos="fade-up" className="text-sm mb-4">
                 <b className="bg-black text-white px-2 py-1 rounded-md">5%</b>{" "}
                 de desconto na primeira compra
               </p>

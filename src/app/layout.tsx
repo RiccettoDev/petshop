@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import "./globals.css";
+import { AosInit } from "./_components/aos-init";
 
 // posso passar o metadata para o layout.tsx de forma globla aqui ou para cada pagina individualmente
 // se eu passar para o layout.tsx, ele vai ser aplicado a todas as paginas
@@ -38,7 +39,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <AosInit />
+      </body>
     </html>
   );
 }
